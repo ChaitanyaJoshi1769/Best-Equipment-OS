@@ -13,6 +13,8 @@ import { VehiclesModule } from './modules/vehicles/vehicles.module';
 import { JobsModule } from './modules/jobs/jobs.module';
 import { TelemetryModule } from './modules/telemetry/telemetry.module';
 import { MaintenanceModule } from './modules/maintenance/maintenance.module';
+import { AnalyticsModule } from './modules/analytics/analytics.module';
+import { AIModule } from './modules/ai/ai.module';
 
 import { JwtStrategy } from './modules/auth/strategies/jwt.strategy';
 import { LocalStrategy } from './modules/auth/strategies/local.strategy';
@@ -61,6 +63,8 @@ import * as entities from './database/entities';
     JobsModule,
     TelemetryModule,
     MaintenanceModule,
+    AnalyticsModule,
+    AIModule,
   ],
   providers: [JwtStrategy, LocalStrategy],
 })
