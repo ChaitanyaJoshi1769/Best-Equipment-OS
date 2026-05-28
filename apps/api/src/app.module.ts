@@ -9,6 +9,10 @@ import { UsersModule } from './modules/users/users.module';
 import { OrganizationsModule } from './modules/organizations/organizations.module';
 import { RolesModule } from './modules/roles/roles.module';
 import { HealthModule } from './modules/health/health.module';
+import { VehiclesModule } from './modules/vehicles/vehicles.module';
+import { JobsModule } from './modules/jobs/jobs.module';
+import { TelemetryModule } from './modules/telemetry/telemetry.module';
+import { MaintenanceModule } from './modules/maintenance/maintenance.module';
 
 import { JwtStrategy } from './modules/auth/strategies/jwt.strategy';
 import { LocalStrategy } from './modules/auth/strategies/local.strategy';
@@ -53,6 +57,10 @@ import * as entities from './database/entities';
     OrganizationsModule,
     RolesModule,
     HealthModule,
+    VehiclesModule,
+    JobsModule,
+    TelemetryModule,
+    MaintenanceModule,
   ],
   providers: [JwtStrategy, LocalStrategy],
 })
