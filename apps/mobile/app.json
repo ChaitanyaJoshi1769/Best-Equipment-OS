@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Best Equipment OS",
+    "slug": "best-equipment-os",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0ea5e9"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.bestequipment.os"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#0ea5e9"
+      },
+      "package": "com.bestequipment.os"
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          },
+          "android": {
+            "usesCleartextTraffic": true,
+            "compileSdkVersion": 33,
+            "targetSdkVersion": 33,
+            "minSdkVersion": 24
+          }
+        }
+      ]
+    ]
+  }
+}
